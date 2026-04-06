@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { Layout } from '@/components/Layout'
+import { Login } from '@/pages/Login'
 import { UserDirectory } from '@/pages/UserDirectory'
 import { GroupDirectory } from '@/pages/GroupDirectory'
 import { CertificationCampaigns } from '@/pages/CertificationCampaigns'
@@ -10,6 +11,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="login" element={<Login />} />
         <Route element={<Layout />}>
           <Route index element={<Navigate to="/users" replace />} />
           <Route path="users" element={<UserDirectory />} />

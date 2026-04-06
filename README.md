@@ -117,3 +117,7 @@ GitHub Actions (`.github/workflows/ci.yml`) triggers on every push to `main`:
 ## SCIM Compliance
 
 The API client sets `Content-Type: application/scim+json` and `Accept: application/scim+json` on all requests, conforming to [RFC 7643](https://www.rfc-editor.org/rfc/rfc7643) and [RFC 7644](https://www.rfc-editor.org/rfc/rfc7644).
+
+## Screenshot
+
+![SCIM Dashboard – User Directory](docs/react_dashboard.png)
